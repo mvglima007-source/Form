@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="cadastro">
+            <h1>Cadastro</h1>
+            <hr>
+        </div>
+
+        <form action="" id="formCadastro">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome">
+
+
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+
+            <label for="datanasc">Data de nascimento: </label>
+            <input type="date" id="datanasc">
+
+            <label for="nivel">Escolaridade: </label>
+
+            <select name="" id="escolaridade">
+                <option value="medio">Ensino médio</option>
+                <option value="graduacao">Graduação</option>
+                <option value="pos">Pós-Graduação</option>
+                <option value="mes">Mestrado</option>
+
+            </select>
+
+            <label for="genero">Gêneros</label>
+            <input type="radio" name="genero" id="masculino" value="masculino"> Masculino
+            <input type="radio" name="genero" id="feminino" value="feminino"> Feminino
+
+
+            <label for="ling">Linguagens de Programção</label>
+            <input type="checkbox" name="habilidade" id="python" value="python">Python
+            <input type="checkbox" name="habilidade" id="JS" value="JS">JavaScript
+            <input type="checkbox" name="habilidade" id="Java" value="Java">Java
+            <input type="checkbox" name="habilidade" id="C#" value="C#">C#
+            <input type="checkbox" name="habilidade" id="PHP" value="PHP">PHP
+
+            <button type="submit"id="btnCadastrar" onclick="salvarCadastro(event)">Cadastrar</button>
+
+
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>

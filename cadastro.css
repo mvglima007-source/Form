@@ -1,0 +1,113 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    background-color: #2c2c2c;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.cadastro h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+label {
+    display: block;
+    margin: 16px 0 6px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 5px #888;
+}
+
+input {
+    margin-right: 8px;
+    accent-color: black;
+    cursor: pointer;
+}
+
+button#btnCadastrar {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button#btnCadastrar:hover {
+    background-color: #111;
+    transform: translateY(-2px);
+    animation: pulse 1s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 30px 20px;
+    }
+
+    .cadastro h1 {
+        font-size: 24px;
+    }
+}
